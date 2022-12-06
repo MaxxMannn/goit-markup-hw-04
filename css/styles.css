@@ -95,6 +95,8 @@ border-bottom: 1px solid #ECECEC;
 .header-adress {
     display: flex;
     gap: 50px;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 
@@ -136,18 +138,27 @@ a {
     color: var(--primary-text-color);
 }
 
-::before .link-adress {
+.link-adress::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
     background-image: url(../images/mail-icon-hover.svg);
+    background-size: contain;
 }
 .link-adress {
+    width: 161px;
+    height: 16px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    
     color: #757575;
+    
+    
 }
 
 
