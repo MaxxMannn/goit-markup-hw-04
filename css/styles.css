@@ -136,6 +136,9 @@ a {
     color: var(--primary-text-color);
 }
 
+::before .link-adress {
+    background-image: url(../images/mail-icon-hover.svg);
+}
 .link-adress {
     font-family: 'Roboto';
     font-style: normal;
@@ -163,8 +166,19 @@ a {
     margin: 0px;
     padding-top: 200px;
 padding-bottom: 200px;
-    background: #2F303A;
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/bighero.jpg);
+height: 600px;
+max-width: 1600px;
+margin-left: auto;
+margin-right: auto;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+border: 1px solid #ECECEC;
+
+    /* linear-gradient(to right, rgba(47, 48, 58, 0.4)) */
     text-align: center;
+    
     
 }
 .hero-description {
@@ -174,8 +188,7 @@ padding-bottom: 200px;
     
           margin-top: 0px;
           margin-bottom: 30px;  
-          background: #2F303A;
-        color: #FFFFFF;
+          color: #FFFFFF;
         font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
