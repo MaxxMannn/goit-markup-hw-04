@@ -62,11 +62,7 @@ border-bottom: 1px solid #ECECEC;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    padding: 0 15px;
-   
-    
-    
-    
+    padding: 0 15px;     
 }
 
 /* Шапка */
@@ -82,9 +78,7 @@ border-bottom: 1px solid #ECECEC;
     justify-content: space-between;
     flex-grow: 1;
     align-items: center;
-    gap: 94px;
-    
-    
+    gap: 94px;      
 }
 
 .header-menu {
@@ -94,8 +88,7 @@ border-bottom: 1px solid #ECECEC;
 
 .header-adress {
     display: flex;
-    gap: 50px;
-    
+    gap: 50px;   
     
 }
 
@@ -140,6 +133,9 @@ a {
 
 
 .link-adress {
+    contain: content;
+    display: flex;
+    justify-content: center;
     width: 161px;
     height: 16px;
     font-family: 'Roboto';
@@ -149,10 +145,11 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #757575;
-    
-    
-}
+    }
 
+.icon {
+    display: inline-flex;
+}
 
 
 /* Блок Герой */
