@@ -147,17 +147,10 @@ a {
     }
 
 .contacts-icon {
-<<<<<<< Updated upstream
     display: inline-flex;
     align-items: center;
     margin-right: 10px;
     fill: currentColor;
-=======
-    
-    fill: #2a2a2a;
-    fill-opacity: 0.7; 
-    margin-right: 10px;
->>>>>>> Stashed changes
 }
 
 .contacts-icon:hover {
@@ -309,6 +302,7 @@ padding-top: 94px;
 padding-bottom: 94px;
 background: #F5F4FA;
 
+
 }
 
 .team-items {
@@ -366,7 +360,8 @@ text-align: center;
     .socials-list {
         display: flex;
         align-items: center;
-        margin: 16px 32px 30px 32px;
+        margin-top: 10px;
+        justify-content: center;
         gap: 10px;
 
     }
@@ -387,24 +382,79 @@ text-align: center;
     border-radius: 50%;
     color: var(--accent-color);
 }
+
+.socials-links:hover {
+    background-color: #2196F3;
+}
 .social-icon {
     fill: #AFB1B8;
 }
 
 .social-icon:hover {
     
+    fill: #fff;
+    
+}
+
+
+/* Наші клієнти */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-item {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+}
+
+.clients-item:hover {
+    border-color: var(--accent-color);
+}
+
+.client-icon:hover {
+    
     fill: var(--accent-color);
 }
 
+
+
+
 /* Футер */
+
 .footer {
+    display: flex;
+    gap: 70px;
+    padding-top: 60px;
     padding-bottom: 60px;
-    
     color: #FFFFFF;
     background: #2F303A;
-    
+  
+}
 
-   }
+.footer-item {
+    display: flex;
+    gap: 70px;
+}
 
 
 .adress {
@@ -433,7 +483,7 @@ padding-bottom: 9px;
 }  
 
 .footer-adress:hover {
-    background-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 
