@@ -133,7 +133,6 @@ a {
 
 
 .link-adress {
-    contain: content;
     display: flex;
     justify-content: center;
     width: 161px;
@@ -148,12 +147,22 @@ a {
     }
 
 .contacts-icon {
+<<<<<<< Updated upstream
     display: inline-flex;
     align-items: center;
     margin-right: 10px;
     fill: currentColor;
+=======
+    
+    fill: #2a2a2a;
+    fill-opacity: 0.7; 
+    margin-right: 10px;
+>>>>>>> Stashed changes
 }
 
+.contacts-icon:hover {
+    fill: var(--accent-color);
+  }
 
 
 
