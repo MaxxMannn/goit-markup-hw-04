@@ -147,9 +147,14 @@ a {
     color: #757575;
     }
 
-.icon {
+.contacts-icon {
     display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    fill: currentColor;
 }
+
+
 
 
 /* Блок Герой */
