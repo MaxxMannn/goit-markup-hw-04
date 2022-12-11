@@ -451,10 +451,14 @@ text-align: center;
   
 }
 
-.footer-item {
+.footer-container {
     display: flex;
-    gap: 70px;
 }
+
+.footer-item {
+    
+}
+
 
 
 .adress {
