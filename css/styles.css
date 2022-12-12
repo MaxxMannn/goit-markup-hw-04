@@ -156,8 +156,25 @@ a {
 .contacts-icon:hover {
     fill: var(--accent-color);
   }
+  .contacts-icon:focus {
+    fill: var(--accent-color);
+  }
+  .link-adress:focus {
+    color: var(--accent-color);
+  }
 
-
+/* LOGO */
+  .logo-setting{
+    display: flex;
+}
+.logo {
+    font-family: Raleway, Georgia;
+    color:#2196F3;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
 
 /* Блок Герой */
 .hero-container {
@@ -243,8 +260,16 @@ border-radius: 4px;
        
 }
 
-.sections-item {
+.section-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F4FA;
+    border-radius: 4px;
     width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    
 }
 
 
@@ -272,10 +297,14 @@ color: #757575;
 }
 
 .section-icon {
-    background-color: #F5F4FA;
-    padding: 25px 102px 25px 102px;
-    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    
+    
 }
+
 
 /* Блок з Фото */
 .foto {
@@ -360,7 +389,7 @@ text-align: center;
     .socials-list {
         display: flex;
         align-items: center;
-        margin-top: 10px;
+        margin-top: 16px;
         justify-content: center;
         gap: 10px;
 
@@ -374,26 +403,27 @@ text-align: center;
 
 .socials-links {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #FFF;
+    border:none;
     border-radius: 50%;
-    color: var(--accent-color);
+    color:#AFB1B8;
+    background-color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
 }
 
-.socials-links:hover {
-    background-color: #2196F3;
-}
+ 
 .social-icon {
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
-.social-icon:hover {
-    
-    fill: #fff;
-    
+
+
+.socials-links:focus,
+.socials-links:hover {
+    color:#FFFFFF;
+    background-color: var(--accent-color);
 }
 
 
@@ -436,69 +466,105 @@ text-align: center;
     fill: var(--accent-color);
 }
 
-
+.client-icon:focus {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    fill: var(--accent-color);
+}
+.clients-item:focus {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
 
 
 /* Футер */
 
 .footer {
     display: flex;
-    gap: 70px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    color: #FFFFFF;
-    background: #2F303A;
-  
+    background-color: #2F303A;
+    padding: 60px 0px;
 }
 
-.footer-container {
+.footer > .container {
     display: flex;
+    width: 1200px;
+    padding: 0px 15px;
+    margin:0px auto;
+    align-items: baseline;
 }
 
-.footer-item {
-    
+.footer-adress{
+    margin-right: 70px;
 }
-
-
-
-.adress {
-    margin-top: 20px;
-    font-family: 'Roboto';
-font-style: normal;
-font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-padding-bottom: 9px;
+.logo-white{
+    color:#FFFFFF;
 }
-
-.footer-adress {
-    
-    margin-top: 9px;
-    color: rgba(255, 255, 255, 0.6);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+.footer-list{
+    display: block;
+    margin-top:28px;
+}
+.footer-list > .item+.item {
+    margin-top:10px;
+}
+.footer-street{
+    color: #FFFFFF;
     font-size: 14px;
     line-height: 1.71;
+    text-decoration: none;
     letter-spacing: 0.03em;
-    width: max-content;
-    
-}  
-
-.footer-adress:hover {
+}
+.footer-contact{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+.footer-adress:hover,.footer-adress:focus,
+.footer-contact:hover,.footer-contact:focus{
     color: var(--accent-color);
 }
+.footer-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color:#FFFFFF;
+    margin-bottom:20px;
+}
+.footer-social{
+    display: flex;
+}
+.footer-social > .item+.item{
+    margin-left:10px;
+}
+.footer-social > .item {
+    width: 44px;
+    height: 44px;
+}
+.social{
+    width:20px; 
+    height:20px;
+    fill:currentColor;
+}
+.footer-button{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding:0px;
+    border:none;
+    border-radius: 50%;
+    color:#FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+}
 
-
-.logo-footer {
-    font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
-color: #FFF;
-
+.footer-button:hover,
+.footer-button:focus{
+    color:#FFFFFF;
+    background-color: var(--accent-color);
 }
 
 /* Портфоліо Блок Нав */
@@ -555,8 +621,12 @@ color: #212121;
     flex-basis: calc((100% - 60px)/ 3) ;
     outline: 1px solid #EEEEEE;
     
-}
+  }
 
+  .example-items:hover {
+   
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 .example-names {
     padding: 20px 24px;
     
